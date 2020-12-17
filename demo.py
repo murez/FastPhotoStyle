@@ -6,7 +6,7 @@ Licensed under the CC BY-NC-SA 4.0 license (https://creativecommons.org/licenses
 from __future__ import print_function
 import argparse
 import torch
-import process_stylization
+import process_stylization_image
 from photo_wct import PhotoWCT
 parser = argparse.ArgumentParser(description='Photorealistic Image Stylization')
 parser.add_argument('--model', default='./PhotoWCTModels/photo_wct.pth')
@@ -34,7 +34,7 @@ else:
 if args.cuda:
     p_wct.cuda(0)
 
-process_stylization.stylization(
+process_stylization_image.stylization(
     stylization_module=p_wct,
     smoothing_module=p_pro,
     content_image_path=args.content_image_path,

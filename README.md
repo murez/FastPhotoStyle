@@ -1,3 +1,19 @@
+# ReadME
+## Requirement
+
+1. `pytorch>=0.4.0,torchvision` are required.
+
+2. `libnvrtc10.1` or  `libnvrtc{CUDA version}` must be installed before installing following pip package.
+
+3. `pip install scikit-umfpack setuptools cupy pynvrtc`
+## usage
+``` python
+import FPS_api.py
+FPS(content, style, content_seg, style_seg,fast_smooth = True) # all PIL pics # Slow is better
+```
+
+----------------------------------
+# OLD READ ME FROM Nvidia
 [![License CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC4.0-blue.svg)](https://raw.githubusercontent.com/NVIDIA/FastPhotoStyle/master/LICENSE.md)
 ![Python 2.7](https://img.shields.io/badge/python-2.7-green.svg)
 ![Python 3.5](https://img.shields.io/badge/python-3.5-green.svg)
